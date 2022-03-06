@@ -9,7 +9,7 @@ variable "number_of_instances" {
 variable "instance_type" {
     type = string
     validation {
-      condition = substr(var.instance_type,0,1) == "t2"
+      condition = substr(var.instance_type,0,2) == "t2"
       error_message = "Only T2 instance types are allowed!"
     }
 }
