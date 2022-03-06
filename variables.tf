@@ -23,3 +23,7 @@ variable "cost_centre" {
     type = string
     default = "master"
 }
+
+variable "subnet_id" {
+    type = string
+}
