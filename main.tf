@@ -5,7 +5,7 @@
 resource "aws_instance" "this" {
     count = var.number_of_instances
     
-    ami = data.aws_ami.ubuntu
+    ami = data.aws_ami.ubuntu.id
     instance_type = var.instance_type
 
     tags = {
