@@ -1,7 +1,7 @@
 variable "number_of_instances" {
     type = number
     validation {
-      condition = number_of_instances < 3
+      condition = var.number_of_instances < 3
       error_message = "The maximum number of instances that can be started is 2!"
     }
 }
@@ -9,7 +9,7 @@ variable "number_of_instances" {
 variable "instance_type" {
     type = string
     validation {
-      condition = substr(instance_type,0,1) == "t2"
+      condition = substr(var.instance_type,0,1) == "t2"
       error_message = "Only T2 instance types are allowed!"
     }
 }
