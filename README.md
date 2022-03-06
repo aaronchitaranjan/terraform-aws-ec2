@@ -1,1 +1,1 @@
-AWS EC2 Module with AWS SSM enabled
+AWS EC2 Module
